@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>结束页面</title>
+		<style type="text/css">
+			 div {
+				width: 160px;
+				height: 50px;
+				padding: 20px;
+				text-align: center;
+				overflow: hidden;
+				position: absolute;
+				background: url(img/flag.png) top center no-repeat;
+				background-size: 200px 500px;
+			}
+			div span {
+				margin-top: 50px;
+				margin-left: -10px;
+				line-height: 50px;
+				display: inline-block;
+				width: 50px;
+				font-family: '楷体';
+				font-size: 45px;
+				color: white;
+			} 
+		</style>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="boostrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<button type="button" class="btn btn-success" class="btn btn-default btn-lg" id="input">点击按钮</button>
+		<div>
+			<span>谢谢各位聆听<br>  !</span>
+		</div>
+		<script type="text/javascript">
+			$('#input').click(function() {
+			$('div').animate({
+					height: '+=770px',
+					left: '+=650px',
+					top: '+=100px'
+				},
+				3500)
+			});
+		</script>
+	</body>
+</html>
